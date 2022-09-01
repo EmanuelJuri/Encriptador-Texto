@@ -64,6 +64,7 @@ body {
     height: 250px;    
     border: 1px solid black;
     border-radius: 15px;
+    outline: none;
 }
 
 .msg-empty{
@@ -115,6 +116,7 @@ body {
     margin: 10px 0 0 0;
     border-radius: 15px;
     transition: 0.3s;
+    outline: none;
 }
 
 .btn-en:hover{
@@ -175,8 +177,7 @@ body {
     .butons{
         flex-direction: row;
         justify-content: space-around;
-        width: 100%;
-        /* border: 1px solid red; */
+        width: 100%;        
     }
     .msg-empty{        
         width: 500px;
