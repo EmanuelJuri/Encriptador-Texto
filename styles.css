@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.desketop{
+    display: none;
+}
+
+body {
+    background-color: #609ED4;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #356EA9;
+}
+
+.title{
+    font-size: 35px;
+    color: #0A3871;
+    letter-spacing: 2px;
+}
+
+.logo{
+    font-size: 35px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text-input,
+.title-text-output{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-text{
+    background: #E9ECF8;    
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 8px;
+    width: 300px;
+    height: 250px;    
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.msg-empty{
+    background: #E9ECF8;    
+    margin: 15px;
+    padding: 8px;
+    width: 300px;
+    height: auto;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.msg-empty-title{
+    margin: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: #052051;
+}
+
+.msg-empty-subtitle{
+    margin: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-empty{
+    display: none;
+}
+
+.butons{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-en,
+.btn-des{
+    background: #0A3871;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 190px;
+    padding: 8px 15px;
+    margin: 10px 0 0 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.btn-en:hover{
+    background: #FACFCF;
+    color: black;
+}
+
+.btn-des:hover{
+    background: #CFFADB;
+    color: black;
+}
+
+.icon-btn{
+    font-size: 35px;    
+    padding-left: 5px;
+}
+
+.output-textarea{
+    position: relative;
+}
+
+.icon-copy{
+    position: absolute;    
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+}
+
+.icon-copy:hover{
+    color: #68E1FD;    
+}
+
+/* ---<Desketop>--- */
+@media(min-width: 1000px){
+    .mobile{
+        display: none;
+    }
+    .desketop{
+        display: flex;
+    }
+    .desketop-group{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;        
+        overflow: auto;
+    }
+    .navbar{
+        justify-content: flex-start;        
+    }
+    .title,
+    .logo-img{        
+        margin: 0 15px;
+    }
+    .input-text{
+        width: 500px;
+        height: 350px;
+    }
+    .butons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .msg-empty{        
+        width: 500px;
+        height: 350px;
+        margin-top: 50px;
+    }
+    .image-empty{
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+        max-height: 350px;
+    }
+}

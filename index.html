@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Encriptador</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href=""><img src="img/logoW.svg" alt="logo" class="logo-img"></a>                        
+            <p class="title mobile">Encriptador</p>
+            <p class="title desketop">Encriptador de Texto</p>
+        </div>
+        <div class="desketop-group">
+            <div class="input-group">
+                <p class="title-text-input">Ingrese su texto aquí</p>
+                <textarea
+                    id="input"
+                    class="input-text"                
+                    spellcheck="false"                
+                ></textarea>    
+                <div class="butons">
+                    <button 
+                        class="btn-en" 
+                        onclick="handleEncrypt()"
+                        >Encriptar
+                        <iconify-icon icon="fluent-emoji-flat:locked" class="icon-btn"></iconify-icon>
+                    </button>
+                    <button 
+                        class="btn-des"
+                        onclick="handleDecrypt()"
+                        >Desencriptar 
+                        <iconify-icon icon="fluent-emoji-flat:unlocked" class="icon-btn"></iconify-icon>
+                    </button>
+                </div>            
+            </div>            
+            <div class="msg-empty">
+                <p class="msg-empty-title">Ningún mensaje fue encontrado</p>
+                <p class="msg-empty-subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <img src="img/research2.png" alt="empty-search" class="image-empty">
+            </div>    
+            <div class="output-group">
+                <p class="title-text-output">Texto procesado</p>
+                <div class="output-textarea">
+                    <textarea
+                        id="output"
+                        class="input-text"                
+                        spellcheck="false"
+                        readonly
+                    ></textarea>    
+                    <div class="icon-copy">
+                        <iconify-icon icon="cil:copy" onclick="handleCopy()"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+    <script src="app.js"></script>
+</body>
+</html>
