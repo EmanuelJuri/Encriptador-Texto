@@ -11,6 +11,7 @@
 
 body {
     background-color: #609ED4;
+    background: #CED4DA;
     height: 100vh;
 }
 
@@ -53,6 +54,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: .5px;
 }
 
 .input-text{
@@ -61,10 +63,11 @@ body {
     font-size: 15px;
     padding: 8px;
     width: 300px;
-    height: 250px;    
-    border: 1px solid black;
+    height: 250px;
+    border: none;
     border-radius: 15px;
     outline: none;
+    resize: none;
 }
 
 .msg-empty{
@@ -74,7 +77,7 @@ body {
     width: 300px;
     height: auto;
     font-size: 20px;
-    border: 1px solid black;
+    border: none;
     border-radius: 15px;
 }
 
@@ -82,13 +85,12 @@ body {
     margin: 15px;
     font-size: 30px;
     text-align: center;
-    color: #052051;
+    color: #0A3871;
 }
 
 .msg-empty-subtitle{
     margin: 10px 20px;
-    text-align: center;
-    font-weight: bold;
+    text-align: center;    
 }
 
 .image-empty{
@@ -104,7 +106,7 @@ body {
 
 .btn-en,
 .btn-des{
-    background: #0A3871;
+    background: #356EA9;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -115,6 +117,7 @@ body {
     padding: 8px 15px;
     margin: 10px 0 0 0;
     border-radius: 15px;
+    border: none;
     transition: 0.3s;
     outline: none;
 }
@@ -146,7 +149,7 @@ body {
 }
 
 .icon-copy:hover{
-    color: #68E1FD;    
+    color: #356EA9;    
 }
 
 /* ---<Desketop>--- */
