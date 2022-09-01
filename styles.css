@@ -175,6 +175,8 @@ body {
     .butons{
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
+        /* border: 1px solid red; */
     }
     .msg-empty{        
         width: 500px;
